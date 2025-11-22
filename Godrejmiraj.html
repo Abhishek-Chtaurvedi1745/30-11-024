@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no">
+  <title>Maison Infratech</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="style.css"> -->
+   <style>
+    
+.bgg1{
+    position: relative;
+    top: 40%;
+    z-index:100;
+    color: #ffffff;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+.bgg1 h1{
+    color: #ffffff;
+    font-weight: 800;
+}
+.bgg19{
+    background: url('img/tulipmousbg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+.bgg19::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    opacity:.6;
+    z-index: 2;
+}
+
+.abtt1{
+    margin: 30px 0px;
+}
+.abtt2{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.abtt2 p{
+    text-align: left;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.lc{
+    background-color: #103c5f;
+}
+
+.lc1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.lc2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+.lc2 li{
+    font-weight: 200;
+    padding:5px 0px;
+    font-size: large;
+    letter-spacing: 1px;
+}
+.fm{
+    margin: 50px;
+}
+.btn4{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.btn4 button{
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-right: 50%;
+}
+iframe{
+    box-shadow: 0px 0px 8px 1px black;
+}
+@media(max-width:1200px){
+    .lc1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        margin:0px;
+        width:100%;
+    }
+    .lc2{
+        margin:5px;
+    }
+    .fm{
+        width:100%;
+    }
+    .fm img{
+        width:100%;
+    }
+}
+.ftr{
+    margin-top: 30px;
+}
+.c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.c2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 0px 0px 0px;
+}
+input {
+    border-radius: 4px;
+    border: 1px solid rgb(111, 111, 111);
+    width: 95%;
+    height: 50px;
+    padding: 10px;
+}
+.full-width {
+    grid-column: span 2;
+    width: 97.464%;
+}
+.c2 button{
+background-color: black;
+color: rgb(255, 255, 255);
+border-radius: 4px;
+padding: 6px 10px 12px 10px;
+border: none;
+height: 40px;
+outline: none;
+width: 200px;
+justify-self: center; 
+align-self: center;   
+grid-column: span 2;
+margin-top: 10px;
+margin-bottom: 50px;
+background: linear-gradient(150deg, #000000 50%, #008cff 50%);
+background-size: 250% 100%;
+background-position: 0% 50%;
+border: 2px solid #ffffff;
+border-radius: 30px;
+text-transform: uppercase;
+cursor: pointer;
+transition: background-position 0.3s ease-out, color 0.3s ease;
+}
+.c2 button:hover{
+    background-position: 100% 0;
+    color:rgb(255, 255, 255);
+}
+.c4{
+width: 200%;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+row-gap: 5px;
+}
+@media(max-width:600px){
+.c4{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+}
+.full-width {
+    grid-column: span 2;
+    width: 95.464%;
+}
+}
+
+.amnt h2{
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+}
+.amnt1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-content: center;
+    gap: 20px;
+}
+.amnt2{
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.amnt2 img{
+    height: 200px;
+    width: 100%;
+}
+.amnt2 h4{
+    padding: 5px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 20px;
+}
+
+@media(max-width:1000px){
+    .amnt1{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:800px){
+    .amnt1{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:500px){
+    .amnt1{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .amnt2{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media(max-width:420px){
+    .amnt2{
+        width: 100%;
+    }
+}
+.nnw1 {
+  width: 100%;
+  display: flex;
+}
+.nnw {
+  width: 70%;
+}
+.nww2 {
+  position: fixed;
+  top: 111px;
+  left: 74%;
+  right: 1%;
+  width: 25%;
+}
+.nww2.stopped {
+  position: absolute !important;
+  top:170px;
+}
+
+@media (max-width: 900px) {
+  .nnw1 {
+    flex-direction: column;
+  }
+  .nww2 {
+    position: static !important;
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+  .nnw {
+    width: 100%;
+  }
+}
+
+    .zxm {
+    padding: 47px;
+    box-sizing: border-box;
+    width: 70%;
+    /* margin-top: -183px; */
+    }
+
+    .form-section h2,
+    .similar-projects h2 {
+      margin-bottom: 10px;
+    }
+
+    .form-section input,
+    .form-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-section button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+.sml1{
+    border: 1px solid black;
+    border-radius: 1px;
+    padding: 30px;
+}
+.sml2{
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.sml3{
+  display: flex;
+  margin-top: 20px;
+}
+.smltxt{
+  /* margin-top: 40px; */
+
+}
+@media (max-width: 900px) {
+  .nww2 {
+    position: static !important;
+    top: auto !important;
+    left: auto;
+    right: auto;
+    width: 100%;
+  }
+}
+
+   </style>
+</head>
+<body>
+  <div class="nnw1">
+  <div class="nnw">
+<div class="container-fluid bgg19">
+  <div class="bgg1">
+      <h1>Godrej Miraya</h1>
+  </div>
+</div>
+<section class="abtt1 container-fluid">
+    <div class="abtt2 container-xl">
+       <h1 style="font-weight:900;">About This Project</h1>
+       <p>
+        Engulfed with royal creations and a serene ambience, Golf Course Road, a plush avenue of Gurgaon aims to offer an ideal living culture to millennials. Godrej Properties, a leading real estate developer has contributed immensely towards making Gurgaon a highly enchanting arena to settle in.
+
+Soon going to be inaugurating another one of its resplendent creations, Godrej Properties is all set to craft a benchmark amongst an extensive range of real estate clientele at a global level. Godrej Miraya is a brand-new household project where residents attain a great opportunity to own a super-luxurious home.
+
+Godrej Miraya Sector 43 Gurgaon is an ideal kind of development for all those who wish to be enclosed with aristocracy and glory. People will become the permanent dwellers of a neighbourhood which is associated with vibrancy, present in the form of elite landmarks and great lifestyle destinations.
+
+Clubhouse at Tulip Monsella is located on the lobby level. The Clubhouse offers the Mini Theatre, Cards Lounge, Snooker Lounge, Banquet Hall, Cigar Lounge, Swimming Pool, Kids Pool, Gaming Lounge, Gym.
+        <br>
+        <br>
+        Gurgaon, searching for the best living standard? Well, look no further than Godrej Miraya Sector 43 Gurgaon. This luxurious project by Godrej is the new-age landmark of the apartment complex. When people say every little thing in a house shouts out class and comfort, that’s exactly what Godrej Miraya symbolizes.
+
+Perfectly situated in Godrej Sector 43 Gurgaon, this residential property provides ultra Luxury Project Gurgaon with the best of luxury and accessibility. Modern structure and exclusive design make the property a favourite among connoisseurs of a comfort-oriented way of life. It has all the charm of a quiet landscaped environment for those who are in search of a peaceful environment and all the energy of a city for those who are in search of an urban environment, and all this is accompanied by magnificent facilities and carefully designed and built homes.
+       </p>
+
+
+        <h2 style="margin-top: 20px;">Project Highlights:-</h2>
+        <p>2 to a core and 3 to a core offerings 248 Units</p>
+        <p>3 Side open apartments with no shared walls</p>
+        <p>STX , Singapore for landscaping</p>
+        <p>Luxurious and comfortable living</p>
+        <p>Approx. size -2711 & 3929 Sq.ft</p>
+    </div>
+</section>
+<div class="lc container-fluid" id="location">
+  <div class="lc1 container">
+      <div class="lc2" style="color: rgb(255, 255, 255); margin-top: 30px;">
+      <h1 style="color: rgb(255, 255, 255); font-weight: 
+      900;">Location</h1>
+      <ul>
+        <li>Sector 42-43 Metro Station- 2 kms</li>
+        <li>G.D. Goenka Public School - 3 kms</li>
+        <li>The Heritage School - 7 kms</li>
+        <li>Amity International School - 3 kms</li>
+        <li>Fortis Hospital - 7 kms</li>
+        <li>Max Hospital - 2 kms</li>
+        <li>Kailash Hospital - 4 kms</li>
+        
+    </ul>
+      <div class="btn4">
+      </div>
+  </div>
+  <div class="fm">
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d427065.26786755014!2d76.90326074927839!3d28.385277503356914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d190049b21291%3A0xae19a98a85dc4ed8!2sGodrej%20Miraya%20-%20Sector%2043%2C%20Gurgaon!5e1!3m2!1sen!2sin!4v1738325234297!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+  </div>
+  </div>
+</div>
+<section class="amnt container-fluid" id="AMENITIES">
+  <h2 style="margin: 30px 0px;">Exclusive Amenities</h2>
+  <div class="amnt1 container-xl">
+      <div class="amnt2">
+          <img src="img/gojogamt.webp" alt="">
+          <h4>jogging track</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/goamtswim.webp" alt="">
+          <h4>swimming pool</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/gosecuramt.webp" alt="">
+          <h4>Security</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/godrejmediaamt.webp" alt="">
+          <h4>Meditation</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/goindoramt.jpg" alt="">
+          <h4>Indore game</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/gocaramt.jpg" alt="">
+          <h4>Car Parking</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/godrejamtgym.webp" alt="">
+          <h4>Gym</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/godrejamtgarden.webp" alt="">
+          <h4>Garden</h4>
+      </div>
+  </div>
+</section>
+</div>
+<div class="nww2 fixed" id="sidebar">
+  <div class="sidebar" id=""  style="">
+      <div class="form-section">
+        <h2>Leave a Comment</h2>
+      <form id="simple-contact-form" method="POST" action="lpii2.php">
+    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required />
+    <div id="error-name" class="error-message"></div>
+
+    <input type="text" name="mobile_no" id="mobile_no" class="form-control" placeholder="Your Mobile No*" required maxlength="10"  />
+    <div id="error-mobile_no" class="error-message"></div>
+
+    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required />
+    <div id="error-email" class="error-message"></div>
+
+    <textarea name="message" id="message" class="form-control" placeholder="Message" required minlength="10"></textarea>
+    <div id="error-message" class="error-message"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="success-message" class="success-message">Thank you! Your message has been sent successfully. We’ll get back to you soon.</div>
+
+      </div>
+      <div class="similar-projects">
+       <div class="sml1">
+        <div class="sml2">
+          <h5>Similar Project</h5>
+        </div>
+          <div class="sml3">
+            <div class="smlimg">
+                <img src="img/Bignonia-Towers11.png" alt="this is image" style="height: 69px; width: 90px; margin-right: 10px;">
+            </div>
+            <div class="smltxt">
+                <h6 style="margin: 0px;">Project Name</h6>
+                <p style="margin: 0px 0px -3px 0px;">Price Range</p>
+                <p style="margin: 0px;">Location Name</p>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+</div>
+<div id="footer">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint dolores obcaecati delectus eligendi, tenetur ut, molestias enim assumenda tempora fugit nemo voluptatem voluptatum voluptate, rerum aliquam laborum et commodi facere quo minima quidem esse? Dicta iste ex consectetur, ad possimus ratione quisquam fugit? Officia eaque mollitia quam sit vero sequi a. Libero, numquam placeat odit repudiandae, similique, labore totam et iusto non vero commodi? Quam laudantium, rem aspernatur amet, odio illum, optio doloremque odit temporibus exercitationem delectus veniam aliquid repellendus quis sed earum. Amet tempore eveniet vero modi rerum praesentium quis at sunt nihil atque, ab impedit reprehenderit! Reiciendis quasi laudantium laborum cum pariatur incidunt accusantium in, tempore exercitationem eos quia eum necessitatibus veritatis odit alias doloribus nesciunt culpa ut recusandae vero. Tenetur incidunt soluta hic, similique magnam velit quidem alias numquam mollitia sapiente autem exercitationem sed odit repudiandae quaerat et aperiam consequuntur illo. Explicabo totam exercitationem perferendis minima id eveniet obcaecati assumenda. Dolore dicta omnis quos, ipsum reiciendis aliquid. At ducimus debitis maxime placeat optio pariatur quia ratione neque natus nostrum, animi sequi omnis, atque fugiat accusantium doloribus voluptas vel nihil quae autem consectetur quisquam sapiente quibusdam. Earum, officia harum. Hic atque quibusdam, corporis asperiores animi modi adipisci maiores sapiente magnam itaque nemo ullam iusto fuga quisquam aliquid ut. Non esse fuga architecto. Aspernatur aliquid optio sint. Fugit molestias vitae, eius nisi dicta similique nostrum impedit aliquam officiis accusantium ea quidem corporis placeat laborum cumque id et esse veniam nulla quasi velit? Fugit similique voluptates itaque laborum. Architecto iure ratione totam delectus, dignissimos, velit incidunt provident est, minus sit nihil cum pariatur! Aperiam vel praesentium pariatur cum odit provident quae eius, aspernatur ex expedita ad nostrum aliquam voluptatem saepe omnis, assumenda dolor, possimus quo labore ut mollitia. Et aliquid deleniti alias nobis, ea illum ducimus ipsa aut blanditiis esse temporibus omnis exercitationem assumenda obcaecati est quibusdam dolor recusandae excepturi distinctio ab pariatur totam reiciendis? Nam eius odio voluptas voluptatibus exercitationem odit adipisci, incidunt maiores aperiam quo nemo reprehenderit possimus sunt ipsam. Dolores culpa temporibus tempore, dignissimos tenetur placeat cupiditate aut id at! Et ducimus nisi quidem cupiditate molestiae? Illo quasi repellendus culpa soluta sequi tenetur tempora? Iure culpa expedita ea soluta alias sed architecto reprehenderit consequatur adipisci vel voluptate vitae dolores in nostrum fugiat minima omnis, debitis odit illo et totam id? Iure numquam rem reiciendis, esse repellat nisi temporibus odit distinctio in veritatis et ea, suscipit officiis, libero laudantium incidunt accusamus! Et saepe explicabo voluptatibus labore cum laborum dignissimos sunt dolores nihil fuga, error aliquid qui nobis exercitationem officia sapiente, tenetur eveniet autem quisquam perspiciatis vel sequi doloribus adipisci. Commodi, animi ut ipsum, ea impedit fugit temporibus amet maiores aperiam dolorem, dolorum itaque voluptatibus. Unde excepturi, libero nobis nam dolore quod inventore reprehenderit vitae repudiandae ab at, omnis assumenda alias rem minus. Nam eum aperiam, modi nihil accusantium odio, eius sit earum error accusamus ipsa minus ut eos similique impedit! Eum, iste perferendis corrupti earum illum a consequuntur, culpa ea tempora, obcaecati voluptates cupiditate impedit ullam ab rem nesciunt autem aspernatur ad? Odio veritatis perspiciatis eligendi repellat, facilis totam vel numquam ullam laborum pariatur earum. Praesentium mollitia ipsam nemo sed dicta perspiciatis eum laudantium impedit porro? Nesciunt totam tempore animi, qui vel veritatis officia, tenetur hic explicabo adipisci similique sapiente iste? Nobis soluta nihil consequuntur dolorem iste molestiae quaerat voluptas ullam reiciendis! Amet iusto sequi, hic debitis facere, vitae quod distinctio ab nemo cupiditate voluptatibus, rerum ad quisquam dignissimos et cum nam facilis. Sapiente culpa expedita eligendi officia, iusto et, distinctio sit maiores repellendus quaerat adipisci officiis velit dolor. Asperiores, sed mollitia! Earum deleniti enim praesentium possimus, voluptate commodi distinctio quos minima? Neque libero temporibus fuga hic deserunt qui iure unde praesentium! Quis ex delectus mollitia dolore vel aliquam quos impedit, repudiandae illo, quibusdam magnam earum itaque laboriosam nesciunt incidunt possimus nihil expedita! Adipisci omnis temporibus itaque! Cumque fugiat nostrum nobis ipsam illo doloremque necessitatibus, aliquam in placeat! Eveniet omnis incidunt placeat, vero totam repudiandae error quaerat iusto mollitia! Explicabo, velit exercitationem! Minima, odit adipisci voluptatum nam quam quo, nobis architecto consequuntur debitis et nihil nulla cupiditate aspernatur! Iure aut quibusdam minima recusandae voluptates laboriosam, perspiciatis veniam enim commodi eos distinctio cumque culpa laudantium veritatis! Quos, voluptate laborum ex voluptates nam adipisci id enim architecto est eum repellendus nisi voluptatem placeat, praesentium incidunt rerum aspernatur. Possimus accusamus numquam, ipsa odit rerum quaerat et culpa dolor ducimus blanditiis vero a quidem reprehenderit incidunt temporibus quis ea? Aperiam aliquid perspiciatis recusandae libero odit eveniet eligendi dolores amet non tempora quae laboriosam qui iste unde vero, a corporis et, at quo cumque labore quidem eaque! Distinctio et temporibus ea error, enim earum reiciendis similique tempore perspiciatis praesentium alias quidem debitis odio saepe, architecto nihil pariatur asperiores voluptatibus maxime quibusdam quam voluptas molestiae eius est? Voluptatem rerum consequuntur porro similique earum ea perspiciatis commodi quibusdam? Delectus fuga reprehenderit voluptas quis, incidunt sapiente officiis recusandae ex quos, nemo nihil, animi atque! Aperiam ipsa voluptatum harum eaque? Reiciendis assumenda libero earum necessitatibus et laudantium fugit! Consectetur, nostrum quis velit assumenda expedita unde et pariatur doloribus dolorum doloremque dolore tempora enim ea quod ducimus at veritatis numquam beatae praesentium, voluptates cum hic. Illo adipisci commodi voluptates modi sunt harum esse repudiandae similique sint ipsam aspernatur quia non voluptas vitae beatae, unde autem veniam, vel necessitatibus? Nulla optio doloremque autem qui! Veritatis temporibus est, eaque velit facilis deleniti ut, magni iste labore corporis sit magnam quis harum ex. Eligendi odio praesentium voluptas facere quidem explicabo nisi quasi deserunt accusamus, excepturi saepe laboriosam, voluptate quisquam soluta nihil ratione eaque aut totam ipsam tenetur! Necessitatibus quia laboriosam rerum quidem corporis dolore eligendi et voluptate sed cum ipsa aperiam, perspiciatis, dolores, quos ut. Ipsam illo enim laboriosam accusamus omnis cupiditate natus, eos reprehenderit provident doloremque consequuntur harum cumque aliquam possimus iste sequi incidunt voluptatem dolore? Sunt dicta et odit consequatur recusandae voluptatem nostrum velit ipsam? Distinctio dignissimos, voluptates soluta laborum rerum eligendi, nam voluptate dicta assumenda nisi libero harum quo a fugit natus amet quos, in repellat aut delectus?
+</div>
+
+</div>
+<script>
+  const sidebar = document.getElementById("sidebar");
+  const footer = document.getElementById("footer");
+
+  function handleScroll() {
+    // Disable sticky behavior on screens <= 900px
+    if (window.innerWidth <= 900) {
+      sidebar.classList.remove("stopped");
+      sidebar.style.position = "static";
+      sidebar.style.top = "auto";
+      return;
+    }
+
+    const sidebarHeight = sidebar.offsetHeight;
+    const footerTop = footer.getBoundingClientRect().top;
+    const scrollY = window.scrollY;
+
+    if (footerTop <= sidebarHeight + 100) {
+      sidebar.classList.add("stopped");
+      sidebar.style.position = "absolute";
+      sidebar.style.top = `${scrollY + footerTop - sidebarHeight - 100}px`;
+    } else {
+      sidebar.classList.remove("stopped");
+      sidebar.style.position = "fixed";
+      sidebar.style.top = "80px";
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("resize", handleScroll); // Re-check on resize
+  window.addEventListener("load", handleScroll);   // Run once on load
+</script>
+
+
+
+</body>
+</html>

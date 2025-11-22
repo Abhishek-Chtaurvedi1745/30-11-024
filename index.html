@@ -1,0 +1,2497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no">
+<title>Maison Infratech</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMf
+SQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<style>
+ .card{
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 0 10px #bea3a3;
+    border-top: 4px solid rgb(3,0,46);
+}
+.btn:hover{
+    background-color: #103f64;
+    border:1px solid #103f64;
+}
+.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    .navbar.transparent {
+      background-color: rgba(0, 0, 0, 0.5);
+      box-shadow: none;
+    }
+    .navbar.scrolled {
+      background-color: white;
+      box-shadow: 0px 0px 6px 0px black;
+    }
+    .nav-link {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .navbar.scrolled .nav-link {
+      color: black;
+    }
+    .menu-icon {
+      cursor: pointer;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 20px;
+      transition: color 0.3s;
+    }
+    .menu-icon div {
+      height: 4px;
+      background: white;
+      transition: transform 0.3s ease,background 0.3s ease;
+    }
+    .menu-icon.open div:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-icon.open div:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-icon.open div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .navbar.scrolled .menu-icon div {
+      background: black;
+    }
+    @media (max-width: 991px) {
+      .menu-icon {
+        display: flex;
+      }
+      .navbar-nav {
+        display: none; 
+      }
+      .side-menu.open .navbar-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        flex-direction:column; 
+        overflow-x: auto;
+      }
+    }
+@media (min-width: 992px) {
+      .menu-icon {
+        display: none; 
+      }
+      .navbar-nav {
+        display: flex; 
+        flex-direction: row;
+      }
+      .nav-link{
+        margin: 10px;
+      }
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh; 
+  width: 300px;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  transition: left 0.3s ease;
+  z-index: 100001;
+  overflow-y: auto; 
+  padding-top: 100px; 
+}
+@media(max-width:360px){
+  .side-menu{
+    width: 250px;
+  } 
+}
+    .side-menu.open {
+      left: 0;
+    }
+    .side-menu .nav-link {
+      color: white;
+      margin: 0 10px;
+      text-align:start;
+    }
+    .klk{
+      height: 2px;
+      width: 100%;
+      background-color:#fff;
+    }
+        h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  text-transform:capitalize;
+  line-height: 1.3;
+  color: #222;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  text-transform:capitalize;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  text-transform:capitalize;
+  font-weight: 500;
+  line-height: 1.5;
+}
+       .content h1{
+            color: #fff;
+        }
+        .ll2 p{
+            color: #fff;
+        }
+        .ll3 p{
+            margin: -10px 0px 30px 0px;
+        }
+        .hp2 p{
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        @media(max-width:770px){
+
+        }
+        @media(max-width:670px){
+
+            .card{
+                width: auto;
+            }
+        }
+        @media(max-width:550px){
+        }
+        p{
+           font-size: 17px;
+           font-weight: 400;
+           line-height: 1.6;
+           color: #333;
+           text-transform: capitalize;
+        }
+        @media(min-width:1550px){
+            .slider-track{
+                width: 1350px;
+            }
+        }  
+        .card-body button{
+           padding: 8px 23px;
+        }
+        .nav-link:hover{
+           color: #59c7f3;
+        }
+        .nav-link:focus{
+          color: #59c7f3;
+        }
+    .qqq{
+    font-weight: bolder; 
+    white-space: nowrap;
+}
+@media(max-width:1000px){
+  .qqq{
+        margin-top:-37px;
+    }
+}
+@media(max-width:600px){
+  .qqq{
+    margin-top: -30px;
+  }
+}
+@media(max-width:450px){
+  .inn{
+    width: 80vw;
+  }
+  .q123{
+    font-size: 10px;
+  }
+}
+   .image-wrapper.active .serial-number {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .image-wrapper .image-darken {
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+.image-wrapper.active .image-darken {
+    opacity: 0;
+    visibility: hidden;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-light transparent" style="z-index: 100000;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/Maison_Infratech-26[1].png" alt="Logo" height="70px">
+          </a>
+          <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Location">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(0 161 255);">Real Estate Advisor</a>
+            </li>
+            <li>
+              <a class="mobile-number" href="tel:+919999156255" style="text-decoration: none;">
+                <i class="fa fa-phone" aria-hidden="true" style="margin-top: 6px;"></i> <span>+919999156255</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="side-menu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+            <p class="klk"></p>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+            <p class="klk"></p>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <p class="klk"></p>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">News</a>
+            <p class="klk"></p>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+            <p class="klk"></p>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Location">Location</a>
+            <p class="klk"></p>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: rgb(0 161 255);">Real Estate Advisor</a>
+          </li>
+          <p class="klk"></p>
+          <a class="mobile-number" href="tel:+919999156255" style="text-decoration: none; color: inherit;">
+            <i class="fa fa-phone" style="margin-top: 6px;" aria-hidden="true"></i> <span>+919999156255</span>
+          </a>
+        </ul>
+      </div>
+      <div class="vd">
+        <div class="vd1">
+            <video autoplay loop muted playsinline>
+                <source src="img/mixkit-side-by-side-aerial-view-of-a-city-at-night-49846-full-hd.mp4" type="video/mp4">
+            </video>
+            <div class="content" style="text-align: center;">
+              <div class="mlp container-fluid">
+                <h1>Welcome to</h1><h1 class="qqq" style="color:#59c7f3; margin-left: 10px;"> Maison Infratech</h1>
+                </div>
+                <p class="q123" style="margin:-7px 20px 15px 20px; color:#fff; white-space: nowrap;text-align: center;">Discover Your Dream Home in millenuum city Gurugram</p>
+                <div class="inn">
+                    <select name="" id="" placeholder="Select City" style="border-right: 1px solid black; color: #646464;" onchange="updatecolor(this)">
+                        <option value="" disabled selected>Select Sector</option>
+                        <option value="Sector 49">Sector 49</option>
+                        <option value="Sector 75">Sector 75</option>
+                        <option value="Sector 14">Sector 14</option>
+                        <option value="Sector 5">Sector 5</option>
+                        <option value="Sohna">Sohna</option>
+                        <option value="Others">Others</option>
+                    </select>
+                   <input class="in2" type="text" placeholder="Enter Keyword">
+                   <button class="btn btn-primary" style="padding: 10px 35px; ">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<section class="slider-container container-fluid">
+    <div class="slider-track container-xxl">
+      <img src="logo/2.png" alt="Image 1">
+      <img src="logo/5.png" alt="Image 3">
+      <img src="logo/bptp.png" alt="Image 4">
+      <img src="logo/logos 1.png" alt="Image 5">
+      <img src="logo/logos copy.png" alt="Image 6">
+      <img src="logo/sg.png" alt="Image 7">
+      <img src="logo/1.png" alt="">
+      <img src="logo/3.png" alt="">
+      <img src="logo/4.png" alt="">
+      <img src="logo/5.png" alt="">
+      <img src="logo/6.png" alt="">
+      <img src="logo/7.png" alt="">
+    </div>
+  </section>
+  <section class="iuo container-fluid">
+    <h1 class="tre456">Featured Projects</h1>
+  <div class="image-container">
+    <div class="image-wrapper">
+       <div class="image-darken">
+            <div class="image-darken1">
+                
+                      
+            </div>
+            
+        </div>
+        <img src="img/elpimg10.jpg" alt="Image 1" class="image">
+        <div class="overlay">
+            <div class="overlay-text">
+                <h1 class="tre" style="color: rgb(255, 255, 255);"></h1>
+                <h2 style="color: #59c7f3;" class="ikn">Elan The Emperor</h2>
+                <div class="qtk1">
+                  <img src="logo/pin (1).png" alt="" style="filter: brightness(0) invert(.5); margin: 0px 10px 0px 0px;">
+                <p style="color: #a0a0a0;">Sector 106, Dwarka Expressway</p>
+                </div>
+                <div class="qtk12">
+                  <h4 style="margin: 0px 0px 10px 4px;">₹</h4>
+                  <h4 style="margin: 0px 10px;">10Cr* - 20Cr*</h4>
+               </div>
+               <div class="qtk12">
+                <img src="logo/home-page.png" alt="" style="filter: brightness(0) invert(.5);">
+                <p style="margin: 0px 10px; color: #a0a0a0;">4,5 BHK Apartment</p>
+             </div>
+                <div class="bbbb">
+                    <div class="bbbb1">
+                      <a href="ElanTheEmperor.html" style="text-decoration: none;">
+                       <p style="color: black; " class="bbbb2">Get More Information</p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="image-wrapper">
+        <img src="img/bigmaison.webp" alt="Image 2" class="image">
+        <div class="overlay">
+            <div class="overlay-text">
+                <h1 class="tre" style="color: rgb(255, 255, 255);"></h1>
+                <h2 style="color: #59c7f3; " class="ikn">Bignonia
+                </h2>
+                  <div class="qtk1">
+                  <img src="logo/pin (1).png" alt="" style="filter: brightness(0) invert(.5); margin: 0px 10px 0px 0px;">
+                <p style="color: #a0a0a0;">Sector 32/33 Sohna</p>
+                </div>
+                <div class="qtk12">
+                  <h4 style="margin: 0px 0px 10px 4px;">₹</h4>
+                  <h4 style="margin: 0px 10px;">9.5Cr* - 18Cr*</h4>
+               </div>
+               <div class="qtk12">
+                <img src="logo/home-page.png" alt="" style="filter: brightness(0) invert(.5);">
+             </div>                <p style="margin: 0px 10px; color: #a0a0a0;">3,4 BHK Apartment</p>
+
+                <div class="bbbb">
+                    <div class="bbbb1">
+                      <a href="Centralparq.html" style="text-decoration: none;">
+                       <p style="color: black; " class="bbbb2" >Get More Information</p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  <div class="image-wrapper">
+    <img src="img/emaarurbanmaison.webp" alt="Image 2" class="image">
+    <div class="overlay">
+        <div class="overlay-text">
+            <h1 class="tre" style="color: rgb(255, 255, 255);"></h1>
+            <h2 style="color: #59c7f3; " class="ikn">Emaar Urban Ascent
+            </h2>
+              <div class="qtk1">
+              <img src="logo/pin (1).png" alt="" style="filter: brightness(0) invert(.5); margin: 0px 10px 0px 0px;">
+            <p style="color: #a0a0a0;">Sector 112 Gurugram</p>
+            </div>
+            <div class="qtk12">
+              <h4 style="margin: 0px 0px 10px 4px;">₹</h4>
+              <h4 style="margin: 0px 10px;">3.5Cr* - 10Cr*</h4>
+           </div>
+           <div class="qtk12">
+            <img src="logo/home-page.png" alt="" style="filter: brightness(0) invert(.5);">
+            <p style="margin: 0px 10px; color: #a0a0a0;">3,4 BHK Apartment</p>
+         </div>
+            <div class="bbbb">
+                <div class="bbbb1">
+                  <a href="Emaar.html" style="text-decoration: none;">
+                   <p style="color: black; " class="bbbb2" >Get More Information</p>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="image-wrapper">
+    <img src="img/dlfprivamaison.jpg" alt="Image 2" class="image">
+    <div class="overlay">
+        <div class="overlay-text">
+            <h1 class="tre" style="color: rgb(255, 255, 255);"></h1>
+            <h2 style="color: #59c7f3; " class="ikn">DLF Privana North
+            </h2>
+              <div class="qtk1">
+              <img src="logo/pin (1).png" alt="" style="filter: brightness(0) invert(.5); margin: 0px 10px 0px 0px;">
+            <p style="color: #a0a0a0;">Sector 77 Gurugram</p>
+            </div>
+            <div class="qtk12">
+              <h4 style="margin: 0px 0px 10px 4px;">₹</h4>
+              <h4 style="margin: 0px 10px;">10Cr* - 15Cr*</h4>
+           </div>
+           <div class="qtk12">
+            <img src="logo/home-page.png" alt="" style="filter: brightness(0) invert(.5);">
+            <p style="margin: 0px 10px; color: #a0a0a0;">4 BHK</p>
+         </div>
+            <div class="bbbb">
+                <div class="bbbb1">
+                  <a href="">
+                   <p style="color: black; " class="bbbb2" >Get More Information</p>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="image-wrapper">
+    <img src="img/heromaison.jpg" alt="Image 2" class="image">
+    <div class="overlay">
+        <div class="overlay-text">
+            <h1 class="tre" style="color: rgb(255, 255, 255);"></h1>
+            <h2 style="color: #59c7f3; " class="ikn">Hero Homes</h2>
+              <div class="qtk1">
+              <img src="logo/pin (1).png" alt="" style="filter: brightness(0) invert(.5); margin: 0px 10px 0px 0px;">
+            <p style="color: #a0a0a0;">Sector 104 Gurugram</p>
+            </div>
+            <div class="qtk12">
+              <h4 style="margin: 0px 0px 10px 4px;">₹</h4>
+              <h4 style="margin: 0px 10px;">1.5Cr* - 5Cr*</h4>
+           </div>
+           <div class="qtk12">
+            <img src="logo/home-page.png" alt="" style="filter: brightness(0) invert(.5);">
+            <p style="margin: 0px 10px; color: #a0a0a0;">3,4 BHK Apartment</p>
+         </div>
+            
+            <div class="bbbb">
+                <div class="bbbb1">
+                  <a href="herohomes.html">
+                  <p style="color: black; " class="bbbb2" >Get More Information</p>  
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="image-wrapper">
+    <img src="img/orchardmaison.avif" alt="Image 2" class="image">
+    <div class="overlay">
+        <div class="overlay-text">
+            <h1 class="tre" style="color: rgb(255, 255, 255);"></h1>
+            <h2 style="color: #59c7f3; " class="ikn">The Orchard
+            </h2>
+              <div class="qtk1">
+              <img src="logo/pin (1).png" alt="" style="filter: brightness(0) invert(.5); margin: 0px 10px 0px 0px;">
+            <p style="color: #a0a0a0;">Sector 32/33 Sohna</p>
+            </div>
+            <div class="qtk12">
+              <h4 style="margin: 0px 0px 10px 4px;">₹</h4>
+              <h4 style="margin: 0px 10px;">1.27Cr* - 5Cr*</h4>
+           </div>
+           <div class="qtk12">
+            <img src="logo/home-page.png" alt="" style="filter: brightness(0) invert(.5);">
+            <p style="margin: 0px 10px; color: #a0a0a0;">3,4 BHK Apartment</p>
+         </div>
+            
+            <div class="bbbb">
+                <div class="bbbb1">
+                  <a href="Theorchard.html">
+                  <p style="color: black; " class="bbbb2" >Get More Information</p>  
+                </a>
+               </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="ll container-fluid" id="Location">
+  <div class="ll2 container-xl">
+    <div class="ll3">
+       <h2 style="margin:20px 0px;">Location is Everything while Searching a Home</h2>
+       <p>Live in Prime Properties in Gurgaon</p>
+    </div>
+    <div class="ll4">
+      <a href="spr.html">
+        <div class="img">
+            <img src="img/elpimag5.jpg" alt="Image 1" height="300px">
+            <div class="tt">
+                <h3>SPR</h3>
+                <p style="margin: 0px 10px;"></p>
+            </div>
+        </div>
+      </a>
+      <a href="dwarka2.html">
+        <div class="img2">
+            <img src="img/elpimag0.webp" alt="Image 2" height="300px">
+            <div class="tt2">
+                <h3>DWARKA EXPRESSWAY</h3>
+                <p style="margin: 0px 10px;"></p>
+            </div>
+        </div>
+    </div>
+  </a>
+    <div class="ll42">
+      <a href="Golfcourse.html">
+        <div class="img21">
+            <img src="img/elpimag5.jpg" alt="Image 3" height="300px">
+            <div class="tt21">
+                <h3>GOLF COURSE ROAD</h3>
+                <p style="margin: 0px 10px;"></p>
+            </div>
+        </div>
+      </a>
+      <a href="sohnaproject.html">
+        <div class="img22">
+            <img src="img/elpimag0.webp" alt="Image 4" height="300px">
+            <div class="tt22">
+                <h3>SOHNA ROAD</h3>
+                <p style="margin: 0px 10px;"></p>
+           </div>
+        </div>
+    </div>
+  </a>
+    <div class="ll4">
+        <div class="img">
+            <img src="img/elpimg10.jpg" alt="Image 5" height="300px">
+            <div class="tt">
+                <h3>SECTOR 61</h3>
+                <p style="margin: 0px 10px;"></p>
+            </div>
+        </div>
+        <a href="newgurugram.html">
+        <div class="img2">
+            <img src="img/elpimg16.jpg" alt="Image 6" height="300px">
+            <div class="tt2">
+                <h3>NEW GURUGRAM</h3>
+                <p style="margin: 0px 10px;"></p>
+            </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="ann container-fluid" id="about">
+  <div class="ii1 container">
+  <div class="an1 ">
+      <div class="ii">
+          <img src="img/Axio-Landbaseimg.png" alt="This is an Image">
+      </div>
+      <div class="ccv" style="margin-top: 50px;">
+          <h4>We’re here to help you find a place
+              you’ll love to live</h4>
+              <p>We are a real estate consultancy firm working in Gurugram & Delhi/NCR with a global mindset, bringing together exciting real estate developments and investment opportunities under one roof. All our services are delivered with professionalism and politeness.
+              <br>
+              <br>
+              Our aim is to make moving into and investing in the best Real estate in Delhi/NCR. We are a family of  150+ real estate consultants who are seamless, experienced, and are technology driven looking after your interests even before you’ve signed up for our services.
+              <br>
+              <br>
+              Your new home is just a search away. Find out where your next property could be. Axiom Landbase can match you with a house you will want to call home.</p>
+             <button class="btn btn-primary" style="padding: 11px 30px;  margin: 20px 0px 10px 0px;">Contact Us</button>
+     </div>
+  </div>
+</div>
+</section>
+<section class="mySlider_wrapper container-fluid">
+  <div class="mySlider_slider jkl">
+   <h2 style="margin: 30px 0px;">Latest Project</h2>
+      <div class="mySlider_slides">
+          <div class="mySlider_slide">
+              <img src="img/elphdimg.webp" alt="Slide 1">
+              <div class="mySlider_slide-text"><a href="ElanTheEmperor.html">Elan The Emperor</a></div>
+          </div>
+          <div class="mySlider_slide">
+              <img src="img/elpimg10.jpg" alt="Slide 2">
+              <div class="mySlider_slide-text">
+                <a href="Signature.html">Signature Global Daxin</a>
+              </div>
+          </div>
+          <div class="mySlider_slide">
+              <img src="img/elpimg13.jpg" alt="Slide 3">
+              <div class="mySlider_slide-text">
+                <a href="Centralparq.html">CentralPark Bignonia</a>
+              </div>
+          </div>
+          <div class="mySlider_slide">
+              <img src="img/elpimg11.png" alt="Slide 4">
+              <div class="mySlider_slide-text">
+                <a href="Emaar.html">Emaar</a></div>
+          </div>
+          <div class="mySlider_slide">
+              <img src="img/elpimg12.jpg" alt="Slide 5">
+              <div class="mySlider_slide-text"><a href="smartworld.html">Smartworld Dxp one</a></div>
+          </div>
+          <div class="mySlider_slide">
+              <img src="img/elpimg14.jpg" alt="Slide 6">
+              <div class="mySlider_slide-text">
+                <a href="sobhacity.html">sobhacity</a></div>
+          </div>
+          <div class="mySlider_slide">
+              <img src="img/elpimg16.jpg" alt="Slide 7">
+              <div class="mySlider_slide-text">Hero Homes 104</div>
+          </div>
+          <div class="mySlider_slide">
+              <img src="img/elpimgimp.jpg" alt="Slide 8">
+              <div class="mySlider_slide-text">BPTP 102</div>
+          </div>
+          <div class="mySlider_slide">
+              <img src="img/elpimg17.png" alt="Slide 9">
+              <div class="mySlider_slide-text">Emaar Urban Ascents 112</div>
+          </div>
+      </div>
+     <div class="mySlider_dots"></div>
+  </div>
+</section>
+<section class="wc container-fluid">
+  <div class="wcc">
+  <div class="wc1 container-lg">
+      <div class="wc2">
+       <h2>Why Choose Us</h2>
+       <p style="color: #fff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum tempora saepe ipsum eius dicta veritatis.</p>
+      </div>
+      <div class="wc3">
+         <div class="wcb">
+          <div class="wcb3">
+              <div class="wcb1">
+               <img src="img/location (1).png" alt="">         
+              </div>
+              <div class="wcb2">
+                <h5 style="white-space: nowrap;">Expert Guidance</h5>
+                <p style="text-align: left; margin-top:-4px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi vitae odit voluptate!
+                </p>
+              </div>
+            </div>
+         </div>
+         <div class="wcb">
+          <div class="wcb3">
+           <div class="wcb1">
+             <img src="img/man-close-up-with-a-pencil.png" alt="">         
+            </div>
+            <div class="wcb2">
+              <h5 style="white-space: nowrap;">Personalized Service</h5>
+              <p style="text-align: left; margin-top:-4px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi vitae odit voluptate!
+              </p>
+            </div>
+          </div>
+         </div>
+         <div class="wcb">
+          <div class="wcb3">
+           <div class="wcb1">
+             <img src="img/transparency.png" alt="">         
+            </div>
+            <div class="wcb2">
+              <h5 style="white-space: nowrap;">Transparent Process</h5>
+              <p style="text-align: left; margin-top:-4px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi vitae odit voluptate!
+              </p>
+            </div>
+          </div>
+         </div>
+         <div class="wcb">
+          <div class="wcb3">
+           <div class="wcb1">
+             <img src="img/handshake.png" alt="" height="100px" width="100px">         
+            </div>
+            <div class="wcb2">
+              <h5 style="white-space: nowrap;">Exceptional Support</h5>
+              <p style="text-align: left; margin-top:-4px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi vitae odit voluptate!
+              </p>
+            </div>
+          </div>
+         </div>
+      </div>
+  </div>
+</div>
+</section>
+<section class="ant21 container-fluid" id="project">
+  <h2 style="margin: 30px 0px; text-align: center;">Latest Project</h2>
+  <div class="ant22 container-xxl">
+      <div class="slider-box">
+          <div class="ant23 slider-1">
+              <div class="image-wrapper">
+                  <div class="image-overlay"><img src="img/elpimg10.jpg" alt="Image 1"></div>
+                  <div class="image-overlay"><img src="img/elpimg11.png" alt="Image 2"></div>
+                  <div class="image-overlay"><img src="img/elpimg14.jpg" alt="Image 3"></div>
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>Elan The Emperor</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4 & 5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                    <a href="ElanTheEmperor.html">
+                      Get More Information
+                  </a>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+          <div class="ant23 slider-2">
+              <div class="image-wrapper">
+            <div class="image-overlay"><img src=["img/bgimg2.jpg", alt="Image 1"></div>
+            <div class="image-overlay"><img src="img/bgimg3.jpg", alt="Image 2"></div>
+            <div class="image-overlay"><img src="img/Bignonia-Towers11.png"] alt="Image 3"></div>
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>Bignonia tower</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 32/33 Sohna</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>9.5Cr* - 18Cr*</h6>
+                  <p style="color: #aba4a4;">3 & 4 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                    <a href="Centralparq.html">
+                      Get More Information
+                  </a>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+          <div class="ant23 slider-3">
+              <div class="image-wrapper">
+                  <div class="image-overlay"><img src="img/emgl10.webp" alt="Image 1"></div>
+                  <div class="image-overlay"><img src="img/emgl3.webp" alt="Image 2"></div>
+                  <div class="image-overlay"><img src="img/emgl8.webp" alt="Image 3"></div>
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>Emaar Urban Ascent</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 112</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>3.5Cr* - 10Cr*</h6>
+                  <p style="color: #aba4a4;">3 & 4 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                      <a href="Emaar.html">
+                        Get More Information
+                    </a>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+          <div class="ant23 slider-4">
+              <div class="image-wrapper">
+                  <div class="image-overlay"><img src="img/m3mcrown2.webp" alt="Image 1"></div>
+                  <div class="image-overlay"><img src="img/m3mcrown3.webp" alt="Image 2"></div>
+                  <div class="image-overlay"><img src="img/m3mmaison.webp" alt="Image 3"></div>
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>M3M</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                    <a href="m3m.html">
+                      Get More Information
+                  </a>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+          <div class="ant23 slider-5">
+              <div class="image-wrapper">
+                  <div class="image-overlay"><img src="img/sobha1.webp" alt="Image 1"></div>
+                  <div class="image-overlay"><img src="img/sobh4.jpg" alt="Image 2"></div>
+                  <div class="image-overlay"><img src="img/sobh5.png" alt="Image 3"></div>
+              </div>The content of this website is only for information purposes and does not belong to any official website of developer property. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. All rights for logo & images are reserved to the developer. Thank you for visiting our website.
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>Sobhacity</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                    <a href="sobhacity.html">
+                      Get More Information
+                  </a>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+          <div class="ant23 slider-6">
+              <div class="image-wrapper">
+                  <div class="image-overlay"><img src="img/sm5.jpg" alt="Image 1"></div>
+                  <div class="image-overlay"><img src="img/sm3ma.webp" alt="Image 2"></div>
+                  <div class="image-overlay"><img src="img/sm6.jpeg" alt="Image 3"></div>
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>Smart World</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                    <a href="smartworld.html">
+                      Get More Information
+                  </a>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+          <div class="ant23 slider-7">
+              <div class="image-wrapper">
+                  <div class="image-overlay"><img src="img/m3mc1.webp" alt="Image 1"></div>
+                  <div class="image-overlay"><img src="img/m3mc2.jpg" alt="Image 2"></div>
+                  <div class="image-overlay"><img src="img/m3mc3.jpeg" alt="Image 3"></div>
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>M3m Crown</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                    <a href="m3m.html">
+                      Get More Information
+                  </a>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+          <div class="ant23 slider-8">
+              <div class="image-wrapper">
+                  <div class="image-overlay"><img src="img/m3mg1.webp" alt="Image 1"></div>
+                  <div class="image-overlay"><img src="img/m3mg2.jpeg" alt="Image 2"></div>
+                  <div class="image-overlay"><img src="img/m3mg3.jpeg" alt="Image 3"></div>
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>M3m Golf Hill</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                    <a href="m3mgolf.html">
+                      Get More Information
+                  </a>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+          <div class="ant23 slider-9">
+              <div class="image-wrapper">
+                  <div class="image-overlay"><img src="img/emgl10.webp" alt="Image 1"></div>
+                  <div class="image-overlay"><img src="img/emgl3.webp" alt="Image 2"></div>
+                  <div class="image-overlay"><img src="img/emgl8.webp" alt="Image 3"></div>
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>Elan The Mark</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                    <a href="elanthemark.html">
+                      Get More Information
+                  </a>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="ant21 container-fluid">
+  <h2 style="margin:-10px 0px 30px 0px; text-align: center;">Latest Project</h2>
+  <div class="ant22 container-xxl">
+      <div class="slider-box">
+          <div class="ant23 slider-1">
+              <div class="image-wrapper">
+                  <img src="img/elpimg10.jpg" alt="Image 1">
+                  <img src="img/elpimg11.png" alt="Image 2">
+                  <img src="img/elpimg14.jpg" alt="Image 3">
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>Elan The Emperor</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                      <button>Get More Information</button>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="slider-box">
+          <div class="ant23 slider-2">
+              <div class="image-wrapper">
+                  <img src="img/bgimg2.jpg" alt="Image 1">
+                  <img src="img/bgimg3.jpg" alt="Image 2">
+                  <img src="img/Bignonia-Towers11.png" alt="Image 3">
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>Bignonia</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 32/33 Sohna</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                      <button>Get More Information</button>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+          <div class="ant23 slider-3">
+              <div class="image-wrapper">
+                  <img src="img/emgl10.webp" alt="Image 1">
+                  <img src="img/emgl3.webp" alt="Image 2">
+                  <img src="img/emgl8.webp" alt="Image 3">
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>Emaar</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>3.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                      <button>Get More Information</button>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+          <div class="ant23 slider-4">
+              <div class="image-wrapper">
+                  <img src="img/m3mcrown2.webp" alt="Image 1">
+                  <img src="img/m3mcrown3.webp" alt="Image 2">
+                  <img src="img/m3mmaison.webp" alt="Image 3">
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>M3M</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                      <button>Get More Information</button>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="slider-box">
+        <div class="ant23 slider-5">
+            <div class="image-wrapper">
+                <img src="img/sobha1.webp" alt="Image 1">
+                <img src="img/sobh4.jpg" alt="Image 2">
+                <img src="img/sobh5.png" alt="Image 3">
+            </div>
+            <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+            <div class="ant25">
+                <h6>Sobhacity</h6>
+                <div class="ant26">
+                    <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                    <p class="pip">Sector 106</p>
+                </div>
+            </div>
+            <div class="ant27">
+                <h6>5.5Cr* - 7.94Cr*</h6>
+                <p style="color: #aba4a4;">4,5 BHK</p>
+            </div>
+            <div class="ant24">
+                <div class="antbtn">
+                    <button>Get More Information</button>
+                </div>
+                <div class="antwts">
+                    <a href="https://wa.me/+919999156255" target="_blank">
+                        <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="slider-box">
+      <div class="ant23 slider-6">
+          <div class="image-wrapper">
+              <img src="img/sm5.jpg" alt="Image 1">
+              <img src="img/sm3ma.webp" alt="Image 2">
+              <img src="img/sm6.jpeg" alt="Image 3">
+          </div>
+          <div class="dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+          </div>
+          <div class="ant25">
+              <h6>Smart World</h6>
+              <div class="ant26">
+                  <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                  <p class="pip">Sector 61 Gurugram</p>
+              </div>
+          </div>
+          <div class="ant27">
+              <h6>5.5Cr* - 7.94Cr*</h6>
+              <p style="color: #aba4a4;">4,5 BHK</p>
+          </div>
+          <div class="ant24">
+              <div class="antbtn">
+                  <button>Get More Information</button>
+              </div>
+              <div class="antwts">
+                  <a href="https://wa.me/+919999156255" target="_blank">
+                      <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                  </a>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+  <div class="slider-box">
+    <div class="ant23 slider-7">
+        <div class="image-wrapper">
+            <img src="img/m3mc1.webp" alt="Image 1">
+            <img src="img/m3mc2.jpg" alt="Image 2">
+            <img src="img/m3mc3.jpeg" alt="Image 3">
+        </div>
+        <div class="dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+        <div class="ant25">
+            <h6>M3m Crown</h6>
+            <div class="ant26">
+                <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                <p class="pip">Sector 106</p>
+            </div>
+        </div>
+        <div class="ant27">
+            <h6>5.5Cr* - 7.94Cr*</h6>
+            <p style="color: #aba4a4;">4,5 BHK</p>
+        </div>
+        <div class="ant24">
+            <div class="antbtn">
+                <button>Get More Information</button>
+            </div>
+            <div class="antwts">
+                <a href="https://wa.me/+919999156255" target="_blank">
+                    <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="slider-box">
+  <div class="ant23 slider-8">
+      <div class="image-wrapper">
+          <img src="img/m3mg1.webp" alt="Image 1">
+          <img src="img/m3mg2.jpeg" alt="Image 2">
+          <img src="img/m3mg3.jpeg" alt="Image 3">
+      </div>
+      <div class="dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+      </div>
+      <div class="ant25">
+          <h6>M3m Golf Hill</h6>
+          <div class="ant26">
+              <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+              <p class="pip">Sector 106</p>
+          </div>
+      </div>
+      <div class="ant27">
+          <h6>5.5Cr* - 7.94Cr*</h6>
+          <p style="color: #aba4a4;">4,5 BHK</p>
+      </div>
+      <div class="ant24">
+          <div class="antbtn">
+              <button>Get More Information</button>
+          </div>
+          <div class="antwts">
+              <a href="https://wa.me/+919999156255" target="_blank">
+                  <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+              </a>
+          </div>
+          
+      </div>
+  </div>
+</div>
+      <div class="slider-box">
+          <div class="ant23 slider-9">
+              <div class="image-wrapper">
+                <img src="img/emgl10.webp" alt="Image 1">
+                <img src="img/emgl3.webp" alt="Image 2">
+                <img src="img/emgl8.webp" alt="Image 3">
+              </div>
+              <div class="dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+              </div>
+              <div class="ant25">
+                  <h6>Sobhacity</h6>
+                  <div class="ant26">
+                      <img src="logo/pin (1).png" alt="Icon" style="filter: brightness(0) invert(1);">
+                      <p class="pip">Sector 106</p>
+                  </div>
+              </div>
+              <div class="ant27">
+                  <h6>5.5Cr* - 7.94Cr*</h6>
+                  <p style="color: #aba4a4;">4,5 BHK</p>
+              </div>
+              <div class="ant24">
+                  <div class="antbtn">
+                      <button>Get More Information</button>
+                  </div>
+                  <div class="antwts">
+                      <a href="https://wa.me/+919999156255" target="_blank">
+                          <img src="logo/logo.png" alt="WhatsApp Icon" height="50px" width="50px" style="margin: 10px 0px 0px 10px;">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="project-section container-fluid">
+  <div class="project-container container-xxl">
+      <div class="project-header">
+        <h1 class="tyu">The Best Local Real <br> Estate Agent</h1>
+        <p style="text-align: left">Looking for the best local real estate agent? Our team offers expert guidance, market knowledge, and a dedication to helping you find the perfect property.</p>
+      </div>
+      <div class="project-content">
+          <div class="project-card">
+              <div class="project-image-container">
+             <img src="img/elpimg.jpg" alt="This is an Image">
+          </div>
+          <div class="project-text">
+              <p style="text-align: left">"Finding the perfect home or selling your property can be overwhelming, but the best local real estate agent makes the process smooth and rewarding."</p>
+              <div class="project-highlight">
+                  <h5>Highly professional and reliable</h5>
+                  <div class="project-highlight-rating">
+                      <p></p>
+                      <p style="color: #b3840e; text-align: left">4.8</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="project-grid">
+              <div class="project-stat-card project-margin-adjust r561">
+                  <div class="project-stat-content ">
+                      <h3><span class="r56" style="color:#b3840e;">15+</span> Years of Exellent Service</h3>
+                      <!-- <p style="margin: -11px 0px 10px 0px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing</p> -->
+                  </div>
+              </div>
+              <div class="project-stat-card project-margin-adjust">
+                  <div class="project-stat-content">
+                      <h3><span class="r56" style="color:#b3840e;">10000+</span> Happy Customers</h3>
+                      <!-- <p style="margin: -11px 0px 10px 0px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing</p> -->
+                  </div>
+              </div>
+              <div class="project-stat-card">
+                  <div class="project-stat-content">
+                      <h3><span class="r56" style="color:#b3840e;">150+</span> Expert Team</h3>
+                      <!-- <p style="margin: -11px 0px 10px 0px; text-align: left;">Lorem ipsum dolor sit amet consectetur adi</p> -->
+                  </div>
+              </div>
+              <div class="project-stat-card">
+                  <div class="project-stat-content">
+                      <h3><span class="r56" style="color:#b3840e;">1000+</span> property</h3>
+                      <!-- <p style="margin:-11px 0px 10px 0px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing</p> -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="project-section container-fluid">
+    <div class="project-container container-xxl">
+        <div class="project-header">
+          <h1 class="tyu">The Best Local Real <br> Estate Agent</h1>
+          <p style="text-align: left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore iste magni placeat ipsa dolorum non cum, officia labore corporis error ex voluptatem quisquam.</p>
+        </div>
+        <div class="project-content">
+            <div class="project-card">
+                <div class="project-image-container">
+               <img src="img/elpimg.jpg" alt="This is an Image">
+            </div>
+            <div class="project-text">
+                <p style="text-align: left">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit omnis elit. Aut, quia molestiae idver"</p>
+                <div class="project-highlight">
+                    <h5>Highly professional and reliable</h5>
+                    <div class="project-highlight-rating">
+                        <p></p>
+                        <p style="color: #b3840e; text-align: left">4.8</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+            <div class="project-grid">
+                <div class="project-stat-card project-margin-adjust">
+                    <div class="project-stat-content">
+                        <h3><span class="r56" style="color:#b3840e;">50+</span> years</h3>
+                        <p style="margin: -11px 0px 10px 0px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    </div>
+                </div>
+                <div class="project-stat-card project-margin-adjust">
+                    <div class="project-stat-content">
+                        <h3><span class="r56" style="color:#b3840e;">100+</span> projects</h3>
+                        <p style="    margin: -11px 0px 10px 0px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    </div>
+                </div>
+                <div class="project-stat-card">
+                    <div class="project-stat-content">
+                        <h3><span class="r56" style="color:#b3840e;">25+</span> awards</h3>
+                        <p style="    margin: -11px 0px 10px 0px; text-align: left;">Lorem ipsum dolor sit amet consectetur adi</p>
+                    </div>
+                </div>
+                <div class="project-stat-card">
+                    <div class="project-stat-content">
+                        <h3><span class="r56" style="color:#b3840e;">100%</span> success</h3>
+                        <p style="margin:-11px 0px 10px 0px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="client-section container-fluid">
+    <div class="container">
+        <div class="review-header">
+            <h1 style="">What Our Clients Say</h1>
+            <p style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat tenetur voluptas molestiae sequi quis praesentium nostrum quam eum voluptatem ratione nulla, earum culpa reiciendis magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, officia.</p>
+        </div>
+        <div class="review-grid container">
+            <div class="review-card">
+                <img src="img/cl1.jpg" alt="" height="100px" width="100px">
+                <div class="rating">
+                    <span class="rating-star">&#9733;</span>
+                    <span class="rating-star">&#9733;</span>
+                    <span class="rating-star">&#9733;</span>
+                    <span class="rating-star empty">&#9734;</span>
+                    <span class="rating-star empty">&#9734;</span>
+                </div>
+                <h4 style="text-align: left;">Harry</h4>
+                <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquid asperiores distinctio.</p>
+            </div>
+            <div class="review-card">
+                <img src="img/cl2.jpg" alt="" height="100px" width="100px">
+                <div class="rating">
+                    <span class="rating-star">&#9733;</span>
+                    <span class="rating-star">&#9733;</span>
+                    <span class="rating-star">&#9733;</span>
+                    <span class="rating-star empty">&#9734;</span>
+                    <span class="rating-star empty">&#9734;</span>
+                </div>
+                <h4 style="text-align: left;">Bob</h4>
+                <p style="text-align: left;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae libero est sunt consectetur, eveniet nihil porro!</p>
+            </div>
+            <div class="review-card">
+                <img src="img/cl3.jpg" alt="" height="100px" width="100px">
+                <div class="rating">
+                    <span class="rating-star">&#9733;</span>
+                    <span class="rating-star">&#9733;</span>
+                    <span class="rating-star">&#9733;</span>
+                    <span class="rating-star">&#9733;</span>
+                    <span class="rating-star empty">&#9734;</span>
+                </div>
+                <h4 style="text-align: left;">Jamesh</h4>
+                <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquid quasi similique nisi placeat id!</p>                  
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wc container-fluid">
+   <div class="wc1 container-lg">
+       <div class="wc2">
+        <h2>Why Choose Us</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum tempora saepe ipsum eius dicta veritatis.</p>
+       </div>
+       <div class="wc3">
+          <div class="wcb">
+               <div class="wcb1">
+                <img src="img/location (1).png" alt="">         
+               </div>
+               <div class="wcb2">
+                 <h5>Expert Guidance</h5>
+                 <p style="text-align: left; margin-top:-4px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi vitae odit voluptate!
+                 </p>
+               </div>
+          </div>
+          <div class="wcb">
+            <div class="wcb1">
+              <img src="img/man-close-up-with-a-pencil.png" alt="">         
+             </div>
+             <div class="wcb2">
+               <h5>Personalized Service</h5>
+               <p style="text-align: left; margin-top:-4px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi vitae odit voluptate!
+               </p>
+             </div>
+          </div>
+          <div class="wcb">
+            <div class="wcb1">
+              <img src="img/transparency.png" alt="">         
+             </div>
+             <div class="wcb2">
+               <h5>Transparent Process</h5>
+               <p style="text-align: left; margin-top:-4px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi vitae odit voluptate!
+               </p>
+             </div>
+          </div>
+          <div class="wcb">
+            <div class="wcb1">
+              <img src="img/handshake.png" alt="" height="100px" width="100px">         
+             </div>
+             <div class="wcb2">
+               <h5>Exceptional Support</h5>
+               <p style="text-align: left; margin-top:-4px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi vitae odit voluptate!
+               </p>
+             </div>
+          </div>
+       </div>
+   </div>
+</section>
+ <section class="hp container-fluid">
+    <div class="hp1 container">
+        <div class="hp2">
+            <h2>Our Happy</h2>
+            <p>Customer</p>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">           
+            <div class="carousel-indicators" style="margin-top: 100px;">
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hm container-fluid">
+                        <div class="hm2 container">
+                            <img src="img/elpimg.jpg" alt="This is an Image">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum expedita facilis ipsa corporis voluptatem ducimus dolorum iste unde eius aliquid, necessitatibus praesentium rerum molestias quidem ab repellendus del.</p>
+                            <p>By</p>
+                            <p style="color: aqua;">Any One</p>
+                            <p>Sector 49 Gurugram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hm container-fluid">
+                        <div class="hm2 container">
+                            <img src="img/elpimg11.png" alt="This is an Image">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum expedita facilis ipsa corporis voluptatem ducimus dolorum iste unde eius aliquid, necessitatibus praesentium rerum molestias quidem ab repellendus del.</p>
+                            <p>By</p>
+                            <p style="color: aqua;">Any One</p>
+                            <p>Sector 49 Gurugram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hm container-fluid">
+                        <div class="hm2 container">
+                            <img src="img/elpimg17.png" alt="This is an Image">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum expedita facilis ipsa corporis voluptatem ducimus dolorum iste unde eius aliquid, necessitatibus praesentium rerum molestias quidem ab repellendus del.</p>
+                            <p>By</p>
+                            <p style="color: aqua;">Any One</p>
+                            <p>Sector 49 Gurugram</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span  class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="ct container-fluid">
+  <div class="ct4 container-lg">
+   <div class="ct2">
+       <h2>Clients Testimonials</h2>
+       <p class="ct1"></p>
+   </div>
+   <div class="ct3">
+      <div class="ct31">
+         <div class="ct32">
+          <img src="img/cl3.jpg" alt="">
+         </div>
+         <h5>Lisa Patrick</h5>
+         <div class="sstt">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star empty">&#9734;</span>
+         </div>
+         <p style="margin: 0px 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, qui esse eius tempora vel, aspernatur</p>
+      </div>
+      <div class="ct31">
+        <div class="ct32">
+          <img src="img/cl2.jpg" alt="">
+         </div>
+        <h5>Edven Lobo</h5>
+        <div class="sstt">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+         </div>
+        <p style="margin: 0px 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, qui esse eius tempora vel, aspernatur</p>
+      </div>
+      <div class="ct31">
+        <div class="ct32">
+          <img src="img/cl1.jpg" alt="">
+         </div>
+        <h5>Luio Mese</h5>
+        <div class="sstt">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+         </div>
+        <p style="margin: 0px 10px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id culpa odio ratione hic, veritatis quisquam.</p>
+      </div>
+      <div class="ct31">
+        <div class="ct32">
+          <img src="img/cl4.webp" alt="">
+         </div>
+        <h5>Andrea Onana</h5>  
+        <div class="sstt">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star empty">&#9734;</span>
+          <span class="star empty">&#9734;</span>
+         </div>     
+        <p style="margin: 0px 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque doloremque autem minus eveniet laboriosam beatae.</p>
+      </div>
+   </div>
+  </div>
+</section> 
+ <section class="container-fluid testimonial-container">
+  <div class="testimonial-content container-xxl">
+    <div class="testimonial-header">
+      <h1 style="color: #ffffff;">Client Testimonial</h1>
+      <p style="color: #ffffff; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vitae culpa aut ullam, placeat nobis!</p>
+      <div class="arrow-container">
+        <button class="arrow-btn left-arrow">&larr;</button>
+        <button class="arrow-btn right-arrow">&rarr;</button>
+      </div>
+    </div>
+    <div class="testimonial-slider">
+      <div class="slider-wrapper">
+        <div class="-item">
+          <div class="testimonial-info">
+              <img src="img/cl2.jpg" alt="">
+              <h3 style="color: black; margin-top: 30px;">Lorem ipsum </h3>
+          </div>
+          <div class="testimonial-text" style="color:black;">
+            <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui corporis consequatur asperiores officiis reprehenderit velit, deleniti, et dolorum deserunt distinctio ratione natus itaque, a culpa corrupti modi. Dolor recusandae repellendus, consequuntur blanditiis obcaecati</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-info">
+              <img src="img/cl1.jpg" alt="">
+              <h3 style="color: black;margin-top: 30px;">Lorem ipsum </h3>
+          </div>
+          <div class="testimonial-text" style="color:black;">
+            <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui corporis consequatur asperiores officiis reprehenderit velit, deleniti, et dolorum deserunt distinctio ratione natus itaque, a culpa corrupti modi. Dolor recusandae repellendus, consequuntur blanditiis obcaecati</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-info">
+              <img src="img/cl3.jpg" alt="">
+              <h3 style="color: black;margin-top: 30px;">Lorem ipsum </h3>
+          </div>
+          <div class="testimonial-text" style="color:black;">
+            <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui corporis consequatur asperiores officiis reprehenderit velit, deleniti, et dolorum deserunt distinctio ratione natus itaque, a culpa corrupti modi. Dolor recusandae repellendus, consequuntur blanditiis obcaecati</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-info">
+              <img src="img/cl4.webp" alt="">
+              <h3 style="color: black;margin-top:30px;">Lorem ipsum </h3>
+          </div>
+          <div class="testimonial-text" style="color:black;">
+            <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui corporis consequatur asperiores officiis reprehenderit velit, deleniti, et dolorum deserunt distinctio ratione natus itaque, a culpa corrupti modi. Dolor recusandae repellendus, consequuntur blanditiis obcaecati</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-info">
+              <img src="img/cl2.jpg" alt="">
+              <h3 style="color: black;margin-top:30px;">Lorem ipsum </h3>
+          </div>
+          <div class="testimonial-text" style="color:black;">
+            <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui corporis consequatur asperiores officiis reprehenderit velit, deleniti, et dolorum deserunt distinctio ratione natus itaque, a culpa corrupti modi. Dolor recusandae repellendus, consequuntur blanditiis obcaecati</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid cnb1" style="margin: 30px 0px;">
+  <div class="container-xxl"><h2 style="text-align: left;">Why Choose</h2>
+    <div class="container-xxl cnb11">
+       <div class="cnbb11">
+        <img src="logo/percentage.png" alt="">
+         <h5>Zero Brokerage</h5>
+         <p>Enjoy a brokerage-free experience on NoBroker and save on commission.</p>
+       </div>
+       <div class="cnbb11">
+        <img src="logo/headphones-with-mic.png" alt="">
+        <h5>Comprehensive Support</h5>
+        <p>NoBroker ensures seamless transactions with end-to-end support, from property search to paperwork.</p>
+       </div>
+       <div class="cnbb11">
+        <img src="logo/price-tag.png" alt="">
+        <h5>Unmatched Prices</h5>
+        <p>Access the most competitive property prices with NoBroker, making your dream home more affordable.</p>
+       </div>
+       <div class="cnbb11">
+        <img src="logo/handshake (1).png" alt="">
+        <h5>Full Transparency</h5>
+        <p>Experience complete transparency with verified listings and detailed project insights, ensuring you make informed decisions.</p>
+       </div>
+       <div class="cnbb11">
+        <img src="logo/rupee.png" alt="">
+        <h5>Exclusive Offers</h5>
+        <p>Benefit from exclusive deals worth up to ₹2 lakh when you transact through NoBroker, adding more value to your investments.</p>
+       </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid testimonial-container">
+  <div class="testimonial-content container-xxl">
+    <div class="testimonial-header">
+      <h1 style="color: #ffffff; margin: 30px 0px 20px 0px;">Client Testimonial</h1>
+      <p style="color: #ffffff; text-align: left;">Our clients are at the heart of everything we do. Here’s what they have to say about their experiences with us.</p>
+      <div class="arrow-container">
+        <button class="arrow-btn left-arrow">&larr;</button>
+        <button class="arrow-btn right-arrow">&rarr;</button>
+      </div>
+    </div>
+    <div class="testimonial-slider">
+      <div class="slider-wrapper">
+        <div class="testimonial-item">
+          <div class="testimonial-info">
+              <img src="img/maicltsimgAb.webp" alt="">
+              <h3 style="color: black; margin-top: 30px;">Abhishek Chikara</h3>
+          </div>
+          <div class="testimonial-text" style="color:black;">
+            <p style="text-align: left;">Successful and Profitable Transactions: Hats off to Pankaj Ji for their outstanding work! I listed my property with them, and they managed to sell it within a few weeks at a price higher than I expected. Their negotiation skills are top-notch, and they made sure I got the best deal possible. I couldn't be happier with the outcome. If you're looking for a real estate firm that delivers results, look no further than Maison Infratech.</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-info">
+              <img src="img/maicltsimgAsp.webp" alt="">
+              <h3 style="color: black;margin-top: 30px">Ashish Pandey</h3>
+          </div>
+          <div class="testimonial-text" style="color:black;">
+            <p style="text-align: left;">I was extremely impressed with the level of customer service provided by Maison Infratech. From the moment I contacted them, their agents were attentive, friendly, and always available to answer my questions. They guided me in home-buying process with patience and professionalism, making it a stress-free experience. I highly recommend Maison to anyone looking for a real estate firm that truly cares about their clients.</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-info">
+              <img src="img/maisltimgRc.webp" alt="">
+              <h3 style="color: black;margin-top: 30px;">Dr. Rakesh Chawla</h3>
+          </div>
+          <div class="testimonial-text" style="color:black;">
+            <p style="text-align: left;">I cannot thank the agents at Maison Infratech enough for their expertise and dedication. They knew the local market inside out and provided me with valuable insights that helped me make informed decisions. Their attention to detail and thorough understanding of real estate transactions were impressive. Thanks to their guidance, I found my dream home within weeks. Mr.Pankaj has a team of exceptional agents you can trust. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="slider-container1 container" style="padding:30px 0px 40px 0px" id="news">
+  <h2 class="slider-cont45" style="margin:0px 0px 30px 0px;">Latest from our blog</h2>
+  <div class="slider-controls">
+    <button class="owl-prev">Prev</button>
+    <button class="owl-next">Next</button>
+  </div>
+  <div class="owl-carousel container-xxl">
+    <div class="item"> 
+      <a href="blog3.html">
+      <img src="img/elphdimg.webp" alt="Slide 1">
+    </a>
+      <div class="text-overlay">
+        <div class="text-overlay2">
+          <h5 style="text-align: left;">23 September 2024</h5>
+          <h6 style="text-align:left;">Expert Advisors for Buying and Selling Property in India</h6>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <a href="blog3.html">
+      <img src="img/cl2.jpg" alt="Slide 2" style="cursor: grab;">
+    </a>
+      <div class="text-overlay">
+        <div class="text-overlay2">
+          <h5 style="text-align: left;">12 March 2023</h5>
+          <h6 style="text-align:left;">Why Maison Infratech Stands Out in the Infrastructure Industry</h6>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <a href="blog3.html">
+      <img src="img/elpimg.jpg" alt="Slide 3">
+    </a>
+      <div class="text-overlay">
+        <div class="text-overlay2">
+          <h5 style="text-align: left;">20 January 2025</h5>
+          <h6 style="text-align:left;">How Maison Infratech Simplifies Real Estate Transactions in Gurugram</h6>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <a href="blog3.html">
+      <img src="img/elpimg2.jpg" alt="Slide 4">
+    </a>
+      <div class="text-overlay">
+        <div class="text-overlay2">
+          <h5 style="text-align: left;">03 August 2021</h5>
+          <h6 style="text-align:left;">Your First Choice for Real Estate Guidance: Maison Infratech</h6>
+        </div>                                                                                                                                                       
+      </div>
+    </div>
+  </div>
+</div>
+<div class="c" id="contact">
+  <div class="c1 container-fluid">
+      <h1 style="margin-top: 30px; font-weight: 900;">Contact Us</h1>
+          <form action="" class="container">
+      <div class="c2">
+          <div class="c4">
+          <input type="text" placeholder="Name*" maxlength="2" style="margin: 15px 0px;">
+          <input type="text" placeholder="Mobile no.*" maxlength="20" pattern="[0-9]*" style="margin: 15px 0px;">
+          <input type="email" placeholder="E-mail*" style="margin: 15px 0px;">
+          <input type="" placeholder="Message*" maxlength="20" pattern="" style="margin: 15px 0px;">   
+      </div>          
+          <input type="text" class="full-width" placeholder="Message"  pattern="[0-9]*" style="margin: 20px 0px;">
+          <button>SEND</button>
+      </div>   
+    </form>
+  </div>
+</div>
+<div class="ff container-fluid">
+    <div style="background-color: #051630;">
+<div class="ft container-fluid">
+    <div class="ft1">
+        <div class="ft2 row">
+            <div class="at col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <div class="lgg" style="margin: 16px 0px 19px -37px;"><img class="iii" src="img/Maison_Infratech-26[1].png" alt="" height="100px" width="99%"></div>
+                <div class="ffl">
+                <img src="logo/Untitled-1_0001_Flag_of_India.svg.png" alt="indian flag" height="27%" width="90%">
+                <p style="text-align: left;">957C Tower A, Spaze I-Tech Park, Badshahpur Sohna Rd Hwy, Sector 49, Gurugram, Haryana 122018, India
+                </p>
+                </div>
+                <div class="ffl">
+                <img src="logo/Untitled-1_0000_Rectangle-1-copy.png" alt="Canada flag" height="33%" width="60%" style="margin-top:-4px;">
+                <p style="text-align: left;">9 Maple Beach Crescent, Greater Toronto Area, L7A 2T8 Ontario, Canada</p>
+            </div>
+                <h4 style="margin-top: 30px;">We are Ready to  <br><strong>Help You. Feel Free to Contact</strong></h4>
+                <div class="add2">
+                    <i style="margin-top:7px; color: blue;" class="fa-solid fa-location-dot"></i>
+                    <p>Sector 49 Gurugram 122018</p>
+                </div>
+                <div class="add2">
+                    <i style="margin-top:7px; color: blue;" class="fa-solid fa-message"></i>
+                    <p style="margin-top:0px; text-transform: lowercase;">admin@maisoninfratech.in</p>
+                </div>
+                <div class="add2">
+                    <i style="margin-top:7px; color: blue;" class="fa-solid fa-phone"></i>
+                    <p>+919999156255</p>
+               </div>  
+               <h4>Follow Us</h4>    
+               <div class="icc"> 
+               <div class="icn1">
+                <a href="#">
+                <i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="icn1">
+                <a href="#"><i class="fa-brand"></i></a>
+            </div>
+            <div class="icn1">
+                <a href="#"><i class=""></i></a>
+            </div>
+            <div class="icn1">
+                <a href="#"> 
+                <i class=""></i></a>
+            </div> 
+      </div>
+</div>  
+            <div class="at col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <h2 style="margin-bottom: 37px;" class="smp">Company</h2>
+                <div class="at2">
+                    <p>About</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at2">
+                    <p>Award</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Events & Activities</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Job Openings</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Haryana RERA</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Media Center</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Privacy Policy</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Student portal</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+            </div>
+            <div class="at col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <h2 style="margin-bottom: 37px;" class="smp">Project</h2>
+                <div class="at2">
+                    <p>Signature Global</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at2">
+                    <p>Real state</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Elan Imperial</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>M3M Capital</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>M3M Atrium</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>SS Linden</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Elan Paradise</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Elan Empire</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+            </div>
+            <div class="at col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <h2 style="margin-bottom: 37px;" class="smp">Builder</h2>
+                <div class="at2">
+                    <p>M3M</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at2">
+                    <p>DLF</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Elan</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>SS Group</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>BPTP</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Dxin</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Elan Imperial</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                <div class="at3">
+                    <p>Elan presidential</p>
+                    <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+                </div>
+                <p class="l22"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<div class="phph">
+  The content of this website is only for information purposes and does not belong to any official website of developer property. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. All rights for logo & images are reserved to the developer. Thank you for visiting our website.
+</div>
+</div>   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybEkCx7pO0p/5hX+3g7pdd9Z8/8mCzXrL9foa2v5pdx4Yg8R+7" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  
+  <script src="script.js"></script>
+  
+    <!-- <script>
+      const imageWrappers = document.querySelectorAll('.image-wrapper');
+      const overlayTexts = document.querySelectorAll('.overlay-text');
+  
+      const firstWrapper = imageWrappers[0];
+      firstWrapper.classList.add('active');
+  
+      imageWrappers.forEach((wrapper, index) => {
+          wrapper.addEventListener('click', () => {
+              const isActive = wrapper.classList.contains('active');
+              
+              imageWrappers.forEach((wr) => wr.classList.remove('active'));
+              overlayTexts.forEach((text) => text.classList.remove('visible'));
+  
+              if (!isActive) {
+                  wrapper.classList.add('active');
+              }
+          });
+  
+          wrapper.addEventListener('dblclick', () => {
+              if (wrapper.classList.contains('active')) {
+                  wrapper.classList.remove('active');
+              }
+          });
+      });
+  </script>
+    <script>
+ $(document).ready(function () {
+  let currentIndex = 0;
+  const sliderWrapper = $('.slider-wrapper');
+  const slides = $('.testimonial-item');
+  const slidesToShow = 1; 
+  const intervalTime = 3000;
+  let autoSlideInterval;
+
+  sliderWrapper.append(slides.clone().addClass('clone'));
+  sliderWrapper.prepend(slides.clone().addClass('clone'));
+
+  function calculateSlideWidth() {
+    return $('.testimonial-item').outerWidth(true);
+  }
+
+  function updateSlider(skipTransition = false) {
+    const slideWidth = calculateSlideWidth();
+    const offset = -(currentIndex * slideWidth);
+
+    if (skipTransition) {
+      sliderWrapper.css('transition', 'none');
+    } else {
+      sliderWrapper.css('transition', 'transform 0.5s ease');
+    }
+
+    sliderWrapper.css('transform', `translateX(${offset}px)`);
+  }
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+      moveToNextSlide();
+    }, intervalTime);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  function moveToNextSlide() {
+    const totalSlides = $('.testimonial-item').length;
+    currentIndex++;
+    updateSlider();
+
+    if (currentIndex >= totalSlides - slidesToShow) {
+      setTimeout(() => {
+        currentIndex = slides.length;
+        updateSlider(true);
+      }, 500);
+    }
+  }
+
+  function moveToPreviousSlide() {
+    const totalSlides = $('.testimonial-item').length;
+    currentIndex--;
+    updateSlider();
+
+    if (currentIndex < slidesToShow) {
+      setTimeout(() => {
+        currentIndex = slides.length - slidesToShow;
+        updateSlider(true);
+      }, 500);
+    }
+  }
+
+  $('.left-arrow').click(function () {
+    stopAutoSlide();
+    moveToPreviousSlide();
+    startAutoSlide();
+  });
+
+  $('.right-arrow').click(function () {
+    stopAutoSlide();
+    moveToNextSlide();
+    startAutoSlide();
+  });
+
+  $(window).resize(function () {
+    updateSlider(true);
+  });
+
+  currentIndex = slides.length;
+  updateSlider(true);
+  startAutoSlide();
+});
+
+    </script>
+    <script>
+        $(document).ready(function () {
+          const $sliderTrack = $('.slider-track');
+          const slideWidth = $('.slider-track img').outerWidth(true); 
+          const animationSpeed = 30; 
+
+          $sliderTrack.append($sliderTrack.html());
+    
+          let currentPosition = 0;
+    
+          function animateSlider() {
+            currentPosition -= 1; 
+            if (Math.abs(currentPosition) >= slideWidth * ($sliderTrack.children().length / 2)) {
+              currentPosition = 0;
+            }
+            $sliderTrack.css('transform', `translateX(${currentPosition}px)`);
+          }
+    
+          let sliderInterval = setInterval(animateSlider, animationSpeed);
+    
+          $('.slider-container').hover(
+            function () {
+              clearInterval(sliderInterval); 
+            },
+            function () {
+              sliderInterval = setInterval(animateSlider, animationSpeed); 
+            }
+          );
+        });
+      </script>
+    
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const logo = document.querySelector('.navbar-brand img');
+        const menuIcon = document.querySelector('.menu-icon');
+        const sideMenu = document.querySelector('.side-menu');
+    
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+            navbar.classList.remove('transparent');
+            logo.src = 'logo/Maison Infratech-25.png';
+          } else {
+            navbar.classList.add('transparent');
+            navbar.classList.remove('scrolled');
+            logo.src = 'img/Maison_Infratech-26[1].png';
+          }
+        });
+    
+        menuIcon.addEventListener('click', () => {
+          menuIcon.classList.toggle('open');
+          sideMenu.classList.toggle('open');
+        });
+      </script>
+  <script>
+    $(document).ready(function () {
+      const owl = $(".owl-carousel");
+
+      let autoplayTimer;
+
+      owl.owlCarousel({
+        loop: true,
+        margin: 13,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        smartSpeed: 1000,
+        responsive: {
+          0: { items: 1 },
+          500: { items: 2 },
+          1000: { items: 3 }
+        }
+      });
+
+      function restartAutoplay() {
+        owl.trigger('stop.owl.autoplay');
+        clearTimeout(autoplayTimer);
+
+        autoplayTimer = setTimeout(function () {
+          owl.trigger('play.owl.autoplay', [3000]); 
+        }, 3000); 
+      }
+
+      $(".owl-prev").click(function () {
+        owl.trigger("prev.owl.carousel");
+        owl.trigger('stop.owl.autoplay'); 
+        restartAutoplay(); 
+      });
+
+      $(".owl-next").click(function () {
+        owl.trigger("next.owl.carousel");
+        owl.trigger('stop.owl.autoplay');
+        restartAutoplay(); 
+      });
+
+      restartAutoplay();
+    });
+  
+  </script>
+     <script>
+        const slides = document.querySelector('.mySlider_slides');
+        const dotsContainer = document.querySelector('.mySlider_dots');
+        let currentIndex = 0;
+        const totalSlides = document.querySelectorAll('.mySlider_slide').length;
+
+        function getSlidesPerView() {
+            if (window.innerWidth <= 458) return 1;
+            if (window.innerWidth <= 992) return 2;
+            return 3;
+        }
+
+        function createDots() {
+            const slidesPerView = getSlidesPerView();
+            const totalPages = Math.ceil(totalSlides / slidesPerView);
+            dotsContainer.innerHTML = '';
+
+            for (let i = 0; i < totalPages; i++) {
+                const dot = document.createElement('span');
+                dot.classList.add('mySlider_dot');
+                dot.addEventListener('click', () => setCurrentSlide(i));
+                dotsContainer.appendChild(dot);
+            }
+            updateDots();
+        }
+
+        function showSlide(index) {
+            const slidesPerView = getSlidesPerView();
+            const slideWidth = slides.clientWidth / slidesPerView;
+            slides.style.transform = `translateX(${-index * slideWidth}px)`;
+        }
+        function updateDots() {
+            const slidesPerView = getSlidesPerView();
+            const totalPages = Math.ceil(totalSlides / slidesPerView);
+            const activeDotIndex = Math.floor(currentIndex / slidesPerView);
+
+            const dots = document.querySelectorAll('.mySlider_dot');
+            dots.forEach(dot => dot.classList.remove('active'));
+            if (dots[activeDotIndex]) dots[activeDotIndex].classList.add('active');
+        }
+
+        function autoSlide() {
+            const slidesPerView = getSlidesPerView();
+            const totalPages = Math.ceil(totalSlides / slidesPerView);
+
+            currentIndex = (currentIndex + 1) % totalPages;
+            showSlide(currentIndex * slidesPerView);
+            updateDots();
+        }
+        function setCurrentSlide(index) {
+            clearInterval(autoSlideInterval);
+            currentIndex = index * getSlidesPerView();
+            showSlide(currentIndex);
+            updateDots();
+            autoSlideInterval = setInterval(autoSlide, 5000);
+        }
+        let autoSlideInterval = setInterval(autoSlide, 5000);
+
+        window.addEventListener('resize', () => {
+            createDots();
+            showSlide(currentIndex);
+        });
+        createDots();
+        showSlide(currentIndex);
+    </script>
+        <script>
+            const sliderTrack = document.getElementById("sliderTrack");
+            function startSlider() {
+                const screenWidth = window.innerWidth; 
+                let translatePercentage;
+
+                if (screenWidth <= 450) {
+                    translatePercentage = 34.2; 
+                } else if (screenWidth <= 768) {
+                    translatePercentage = 26.9; 
+                } else {
+                    translatePercentage = 12.43;
+                }
+
+                setInterval(() => {
+                    const firstImage = sliderTrack.querySelector("img");
+                    sliderTrack.style.transition = "transform 1s ease-out"; 
+                    sliderTrack.style.transform = `translateX(-${translatePercentage}%)`;
+    
+                    setTimeout(() => {
+                        sliderTrack.style.transition = "none";
+                        sliderTrack.style.transform = "translateX(0%)";
+                        sliderTrack.appendChild(firstImage); 
+                    }, 1000); 
+                }, 2000); 
+            }            
+            startSlider();
+            window.addEventListener("resize", () => {
+                location.reload(); 
+            });
+   </script> -->
+<script>
+    function updatecolor(select){  
+        if(select.value !== ""){
+            select.style.color = "black";
+        }
+        else {
+            select.style.color = "#ccc";
+        }
+    }
+</script> 
+<script>
+      $(document).ready(function () {
+            function initializeSlider(sliderClass) {
+                let currentIndex = 0;
+                const images = $(`${sliderClass} .image-wrapper .image-overlay`);
+                const dots = $(`${sliderClass} .dots .dot`);
+                const totalImages = images.length;
+                let sliderInterval;
+
+                function showImage(index) {
+                    const offset = -index * 100;
+                    $(`${sliderClass} .image-wrapper`).css("transform", `translateX(${offset}%)`);
+                    dots.removeClass("active");
+                    $(dots[index]).addClass("active");
+                }
+
+                function startSlider() {
+                    sliderInterval = setInterval(() => {
+                        currentIndex = (currentIndex + 1) % totalImages;
+                        showImage(currentIndex);
+                    }, 2000);
+                }
+
+                function stopSlider() {
+                    clearInterval(sliderInterval);
+                }
+
+                dots.click(function () {
+                    currentIndex = $(this).data("index");
+                    showImage(currentIndex);
+                });
+
+                $(sliderClass).hover(stopSlider, startSlider);
+                startSlider();
+            }
+initializeSlider('.slider-1');
+initializeSlider('.slider-2');
+initializeSlider('.slider-3');
+initializeSlider('.slider-4');
+initializeSlider('.slider-5');
+initializeSlider('.slider-6');
+initializeSlider('.slider-7');
+initializeSlider('.slider-8');
+initializeSlider('.slider-9');
+        });
+</script>
+</body>
+</html>

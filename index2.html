@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Social Media Links</title>
+    <style>
+        /* Floating Container */
+        .floating-container {
+            position: fixed;
+            right: 10px; /* Fixed at the right */
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+        }
+
+        /* Individual Social Icons */
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 0;
+            border-radius: 50px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: width 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Ensure Each Icon Stays in Place */
+        .whatsapp {
+            top: 0;
+            background-color: #25d366;
+        }
+
+        .instagram {
+            top: 60px;
+            background: linear-gradient(45deg, #fccc63, #e4405f, #bc2a8d, #8a3ab9);
+        }
+
+        .facebook {
+            top: 120px;
+            background-color: #1877f2;
+        }
+
+        /* Expand Only the Hovered Icon */
+        .social-icon:hover {
+            width: 160px;
+        }
+
+        /* Default Hidden Text */
+        .social-icon a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            white-space: nowrap;
+            padding: 0 15px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Show Text on Hover */
+        .social-icon:hover a {
+            opacity: 1;
+        }
+
+        /* Icon Image */
+        .social-icon img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        /* Push Text Right When Hovered */
+        .social-icon:hover img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Social Media Links -->
+    <div class="floating-container">
+        <div class="social-icon whatsapp">
+            <a href="https://wa.me/1234567890" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </a>
+        </div>
+        <div class="social-icon instagram">
+            <a href="https://instagram.com/yourusername" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+        </div>
+        <div class="social-icon facebook">
+            <a href="https://facebook.com/yourusername" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+                <span>Facebook</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

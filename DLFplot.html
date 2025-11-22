@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no">
+  <title>Maison Infratech</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    .navbar.transparent {
+      background-color: rgb(255, 255, 255);
+      box-shadow: none;
+    }
+    .navbar.scrolled {
+      background-color: rgb(136, 125, 181);
+      box-shadow: 0px 0px 6px 0px black;
+    }
+    .nav-link {
+      color: rgb(0, 0, 0);
+      font-size: 1.2rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .navbar.scrolled .nav-link {
+      color: black;
+    }
+    .menu-icon {
+      cursor: pointer;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 20px;
+      transition: color 0.3s;
+    }
+    .menu-icon div {
+      height: 4px;
+      background: white;
+      transition: transform 0.3s ease,background 0.3s ease;
+    }
+    .menu-icon.open div:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-icon.open div:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-icon.open div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .navbar.scrolled .menu-icon div {
+      background: black;
+    }
+    @media (max-width: 991px) {
+      .menu-icon {
+        display: flex;
+      }
+      .navbar-nav {
+        display: none; 
+      }
+      .side-menu.open .navbar-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        flex-direction:column; 
+        overflow-x: auto;
+      }
+    }
+    @media (min-width: 992px) {
+      .menu-icon {
+        display: none; 
+      }
+      .navbar-nav {
+        display: flex; 
+        flex-direction: row;
+      }
+      .nav-link{
+        margin: 10px;
+      }
+    }
+    .side-menu {
+      position: fixed;
+      top:0;
+      left: -100%;
+      height:600px;
+      width:300px;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items:center;
+      justify-content:center;
+      transition: left 0.3s ease;
+      margin-top:90px;
+      z-index: 100001;
+    }
+    .side-menu.open {
+      left: 0;
+    }
+    .side-menu .nav-link {
+      color: white;
+      margin: 0 10px;
+      text-align:start;
+    }
+    .klk{
+      height: 2px;
+      width: 100%;
+      background-color:#fff;
+    }
+        h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  text-transform:capitalize;
+  line-height: 1.3;
+  color: #222;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  text-transform:capitalize;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  text-transform:capitalize;
+  font-weight: 500;
+  line-height: 1.5;
+}
+        .content h1{
+            color: #fff;
+        }
+        .ll2 p{
+            color: #fff;
+        }
+        .ll3 p{
+            margin: -10px 0px 30px 0px;
+        }
+        .hp2 p{
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        @media(max-width:770px){
+
+        }
+        @media(max-width:670px){
+
+            .card{
+                width: auto;
+            }
+        }
+        @media(max-width:550px){
+        }
+        p{
+           font-size: 16px;
+           font-weight: 400;
+           line-height: 1.6;
+           color: #333;
+           text-transform: capitalize;
+        }
+        @media(min-width:1550px){
+            .slider-track{
+                width: 1350px;
+            }
+        }  
+        .card-body button{
+           padding:8px 23px;
+        }
+        .nav-link:hover{
+           color: #59c7f3;
+        }
+        .nav-link:focus{
+          color: #59c7f3;
+        }
+        
+        
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-light transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/Maison Infratech-29.png" alt="Logo" height="70px">
+      </a>
+      <div class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Career</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: rgb(0 161 255);">Real Estate Advisor</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="container-fluid bgg10">
+  <div class="bgg1">
+      <h1>DLF SCO Plots</h1>
+  </div>
+</div>
+<section class="abtt1 container-fluid">
+    <div class="abtt2 container-xl">
+       <h1 style="font-weight:900;">About This Project</h1>
+       <p>
+        DLF SCO Plots in Sector 84, Gurugram offer a premier opportunity for businesses looking to establish themselves in one of the most promising commercial zones of NCR. Situated along the Dwarka Expressway, this development combines strategic location, world-class infrastructure, and a sustainable design to create the perfect environment for your business to thrive.
+        The project features Shop-Cum-Office (SCO) plots that allow for a mixed-use development, giving you the flexibility to create custom spaces for retail, office, or a combination of both. Designed to meet the growing demand for high-quality commercial real estate, DLF SCO Plots cater to entrepreneurs, investors, and business owners seeking a space with high footfall, accessibility, and future growth potential.
+        With DLF’s legacy of excellence backing the project, every aspect – from infrastructure to design – has been crafted to ensure convenience, comfort, and security. These plots are ideal for businesses ranging from retail stores and showrooms to offices and food courts, offering a versatile space that adapts to your specific needs.
+        Set within the rapidly developing sector, DLF SCO Plots in Sector 84 offer unmatched connectivity to key destinations in Delhi and Gurugram, ensuring your business is never out of reach. Whether you're looking to expand, invest, or start a new venture, DLF SCO Plots provide the perfect foundation for success.
+        <br>
+        <br>
+        </p>
+        <h2 style="margin-top: 20px;">Luxury Specification:-</h2>
+
+        <p></p>
+
+        <h2 style="margin-top: 20px;">Project Highlights:-</h2>
+        
+        <p> Prime Location on Dwarka Expressway with easy connectivity to Delhi, Gurugram, and IGI Airport.</p>
+        <p>Mixed-Use Development offering flexibility to design both commercial and office spaces.</p>
+        <p>World-Class Infrastructure with wide roads, ample parking, and 24/7 security.</p>
+        <p>Sustainable Design featuring energy-efficient systems and green spaces.</p>
+        <p>High Footfall Potential surrounded by residential, commercial, and institutional areas.</p>
+        <p>Strategic Investment offering high rental yield and excellent capital appreciation.</p>
+        <p>Reputable Developer with DLF’s trusted legacy ensuring quality and timely delivery.</p>
+        <p>Flexible Ownership Options with an easy and transparent purchase process.</p>
+        <p>Future-Ready Development in an area poised for rapid urbanization and growth.</p>    
+    </div>
+</section>
+<div class="lc container-fluid" id="location">
+  <div class="lc1 container">
+      <div class="lc2" style="color: rgb(255, 255, 255); margin-top: 30px;">
+      <h1 style="color: rgb(255, 255, 255); font-weight: 
+      900;">Location</h1>
+      <ul>
+      <li>SPR – 2 Minute Walk</li>
+      <li>Sohna Road – 2 Minute Drive</li>
+      <li>NH48 – 5 Minute Drive</li>
+      <li>Dwarka Expressway – 5 Minute Drive</li>
+      <li>Mumbai Expressway – 10 Minute Drive</li>
+ 
+    </ul>
+      <div class="btn4">
+      </div>
+  </div>
+  <div class="fm">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.0618665357565!2d77.0158653!3d28.397527399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23000c4a575f%3A0xc7f6512b3e11564a!2sTulip%20Crimson%20Residences!5e1!3m2!1sen!2sin!4v1738240711486!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </div>
+</div>
+<!-- <section class="amnt container-fluid" id="AMENITIES">
+  <h2 style="margin: 30px 0px;">Exclusive Amenities</h2>
+  <div class="amnt1 container-xl">
+      <div class="amnt2">
+          <img src="img/elpbgimd2.jpg" alt="">
+          <h4>jogging track</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/elphdimg.webp" alt="">
+          <h4>swimming pool</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/elpimag0.webp" alt="">
+          <h4>billiards table</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/elpimag5.jpg" alt="">
+          <h4>banquet hall</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/elpimg.jpg" alt="">
+          <h4>tennis court</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/elpimg10.jpg" alt="">
+          <h4>business lounge</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/elpimg12.jpg" alt="">
+          <h4>fitness center</h4>
+      </div>
+      <div class="amnt2">
+          <img src="img/elpimg13.jpg" alt="">
+          <h4>luxury clubhouse</h4>
+      </div>
+  </div>
+</section> -->
+<div class="c">
+  <div class="c1 container-fluid">
+      <h1 style="margin-top: 30px; font-weight: 900;">Contact Us</h1>
+          <form action="" class="container">
+      <div class="c2">
+          <div class="c4">
+          <input type="text" placeholder="Name*" maxlength="20" style="margin: 15px 0px;">
+          <input type="text" placeholder="Mobile no.*" maxlength="10" pattern="[0-9]*" style="margin: 15px 0px;">
+          <input type="email" placeholder="E-mail*" style="margin: 15px 0px;">
+          <input type="text" placeholder="Budget*" maxlength="20" pattern="[0-9]*" style="margin: 15px 0px;">   
+      </div>          
+          <input type="text" class="full-width" placeholder="Message"  pattern="[0-9]*" style="margin: 20px 0px;">
+          <button>SEND</button>
+      </div>   
+  </form>
+</div>
+</div>
+<div class="ff container-fluid">
+  <div style="background-color: #051630;">
+<div class="ft container-fluid">
+  <div class="ft1">
+      <div class="ft2 row">
+          <div class="at col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="lgg" style="margin: 16px 0px 19px -37px;"><img class="iii" src="img/Maison_Infratech-26[1].png" alt="" height="100px" width="99%"></div>
+              <div class="ffl">
+              <img src="logo/Untitled-1_0001_Flag_of_India.svg.png" alt="indian flag" height="27%" width="90%">
+              <p style="text-align: left;">957C Tower A, Spaze I-Tech Park, Badshahpur Sohna Rd Hwy, Sector 49, Gurugram, Haryana 122018, India
+              </p>
+              </div>
+              <div class="ffl">
+              <img src="logo/Untitled-1_0000_Rectangle-1-copy.png" alt="Canada flag" height="33%" width="60%" style="margin-top:-4px;">
+              <p style="text-align: left;">9 Maple Beach Crescent, Greater Toronto Area, L7A 2T8 Ontario, Canada</p>
+               </div>
+              <h4 style="margin-top: 30px;">We are Ready to  <br><strong>Help You. Feel Free to Contact</strong></h4>
+              <div class="add2">
+                  <i style="margin-top:7px; color: blue;" class="fa-solid fa-location-dot"></i>
+                  <p>Sector 49 Gurugram 122018</p>
+              </div>
+              <div class="add2">
+                  <i style="margin-top:7px; color: blue;" class="fa-solid fa-message"></i>
+                  <p style="margin-top:0px; text-transform: lowercase;">admin@maisoninfratech.in</p>
+              </div>
+              <div class="add2">
+                  <i style="margin-top:7px; color: blue;" class="fa-solid fa-phone"></i>
+                  <p>+919999156255</p>
+             </div>  
+             <!-- <h4>Follow Us</h4>    
+             <div class="icc"> 
+             <div class="icn1">
+              <a href="#">
+              <i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <div class="icn1">
+              <a href="#"><i class=""></i></a>
+          </div>
+          <div class="icn1">
+              <a href="#"><i class=""></i></a>
+          </div>
+          <div class="icn1">
+              <a href="#"> 
+                  <i class=""></i></a>
+          </div> 
+      </div>      -->
+          </div>
+          <div class="at col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <h2 style="margin-bottom: 37px;" class="smp">Company</h2>
+              <div class="at2">
+                  <p>About</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at2">
+                  <p>Award</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Events & Activities</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Job Openings</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Haryana RERA</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Media Center</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Privacy Policy</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Student portal</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+          </div>
+          <div class="at col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <h2 style="margin-bottom: 37px;" class="smp">Project</h2>
+              <div class="at2">
+                  <p>Signature Global</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at2">
+                  <p>Real state</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Elan Imperial</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>M3M Capital</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>M3M Atrium</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>SS Linden</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Elan Paradise</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Elan Empire</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+          </div>
+          <div class="at col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <h2 style="margin-bottom: 37px;" class="smp">Builder</h2>
+              <div class="at2">
+                  <p>M3M</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at2">
+                  <p>DLF</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Elan</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>SS Group</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>BPTP</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <!-- <div class="at3">
+                  <p>Dxin</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Elan Imperial</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p>
+              <div class="at3">
+                  <p>Elan presidential</p>
+                  <p style="font-size: 30px; margin-top: -10px;">&#8594;</p>
+              </div>
+              <p class="l22"></p> -->
+              </div>
+          </div>
+      </div>
+  </div>
+</div>  
+<div class="phph">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam minima iste repellat ad deserunt molestias aliquid quos. Reprehenderit fugit asperiores, corrupti, aspernatur, quam debitis quidem unde nemo maxime labore dignissimos.
+</div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
